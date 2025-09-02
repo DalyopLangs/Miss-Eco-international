@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: darkgreen;
+}
+
+button {
+    background: skyblue;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 2px skyblue solid;
+    border-radius: 5px;
+    color: blue;
+}
+.logo img{
+    max-width: 10%;
+    max-height: 10%;
+} 
+
+
+.logo {
+    text-align: center;
+    color:green;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* ...existing code... */
+#hero {
+    background-image: url('know\ us.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optional: add overlay for better text visibility */
+    position: relative;
+    color: #fff;
+    min-height: 400px; /* adjust as needed */
+    display: flex;
+    align-items: center;
+}
+/* ...existing code... */
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(2, 44, 2);
+    width: 100%;
+    padding: 20px;
+}
+
+li {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+li a {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white    ;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+li a:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: lightblue;
+    background: blue;
+    border-radius: 3px;
+}
+
+.hero-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
+}
+
+.intro,
+.mission {
+    background-color: white;
+    padding: 45px;
+    text-align: center;
+    margin: 30px;
+    color: rgb(2, 48, 2);
+}
+
+#features {
+    display: inline-flex;
+    flex-wrap:nowrap;
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.feat {
+    padding: 20px;
+    text-align: center;
+    color:blue;
+}
+.goals{
+text-align: center;
+color: white;
+font-size: xx-large;
+
+}
+#risk{ 
+    background-color: orange;
+    color-scheme: blue;
+}
+
+#performance{
+    background-color: orange;
+    color: blue;
+    
+}
+project{ 
+    background-color: white;
+    color: skyblue;
+    
+}
+
+.fa-solid {
+    font-size: 1.8rem;
+}
+
+#project,
+#budget {
+    background-color: lightblue;
+    color: blue;
+}
+
+.in,
+.st,
+.trans {
+    width: 20%;
+    min-width: 220px;
+    max-width: 350px;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-top: 50px;
+    font-weight: bolder;
+    margin: 0;
+    border-radius: 10px;
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.in:hover,
+.st:hover,
+.trans:hover {
+    width: 25%;
+}
+
+.in {
+    background-image: url(inovation.png);
+    height: 320px;
+    background-repeat: no-repeat;
+    color: purple;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.st {
+    background-image: url(partnership.png);
+    height: 380px;
+    background-repeat: no-repeat;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.trans {
+    background-image: url(transparency.png);
+    height: 320px;
+    background-repeat: no-repeat;
+    color: purple;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contact {
+    background-color: rgb(2, 2, 36);
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+#testimonials {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.myp1,
+.myp2,
+.myp3 {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.myp3,
+.myp2 {
+    border-left: 4px solid darkblue;
+}
+
+.myp2,
+.myp3 {
+    padding-left: 20px;
+}
+
+.intr {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkgreen;
+    padding: 45px;
+    text-align: center;
+    margin: 30px;
+}
+#pics .person img {
+    width: 150px; /* doubled from 120px */
+    height: 150px;   /* doubled from 120px */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white
+    margin-bottom: 10px;
+}
+#pics .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+#pics .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#pics {
+    background-color: skyblue;
+    color: darkgreen;
+    text-align: center;
+    background-image: url('image/team bacground.jpeg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pics .person p {
+    margin: 24px 0 0 0;
+    padding: 10px 18px 0 10px;
+    font-size: 1.1em;
+    background:   orange;       /* Optional: adds contrast for readability */
+    border-radius: 10px;
+}
+
+
+#pics h1 {
+    color: orange;
+    font-size: 2.5em;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+/* --- Responsive design for mobile devices --- */
+@media (max-width: 900px) {
+    li a {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 1.1em;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .hero-text {
+        font-size: 1.2em;
+        padding-top: 4em;
+    }
+    #features {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .in,
+    .st,
+    .trans {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.1em;
+        min-width: unset;
+        max-width: unset;
+        height: 220px;
+        padding-top: 30px;
+    }
+    #testimonials {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .myp1,
+    .myp2,
+    .myp3 {
+        width: 90vw;
+        min-width: 200px;
+        max-width: 98vw;
+        margin: 10px auto;
+        padding: 15px;
+        height: auto;
+    }
+    .intr {
+        flex-direction: column;
+        padding: 20px;
+        margin: 10px;
+    }
+    #pics {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 5px;
+    }
+    li {
+        display: block;
+        margin: 8px 0;
+    }
+    li a {
+        display: block;
+        padding: 15px 0;
+        font-size: 1em;
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    .hero-text {
+        font-size: 1em;
+        padding-top: 2em;
+    }
+    .intro,
+    .mission {
+        padding: 15px;
+        margin: 6px;
+        font-size: 1em;
+    }
+    #features {
+        flex-direction: column;
+        padding: 8px;
+    }
+    .in,
+    .st,
+    .trans {
+        width: 98vw;
+        margin: 8px auto;
+        font-size: 0.9em;
+        height: 140px;
+        padding-top: 10px;
+    }
+    #contact {
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    #testimonials {
+        padding: 6px;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+    .myp1, .myp2, .myp3 {
+        margin: 8px auto;
+        padding: 8px;
+        width: 99vw;
+        min-width: 120px;
+    }
+    .intr {
+        padding: 10px;
+        margin: 4px;
+    }
+    #pics {
+        padding: 0;
+        margin: 0;
+    }
+}
