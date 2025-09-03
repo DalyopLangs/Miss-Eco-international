@@ -288,6 +288,7 @@ color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+
 @media (max-width: 900px) {
     .navbar {
         position: fixed;
@@ -314,7 +315,6 @@ color: white;
         background-color: rgb(2, 44, 2);
         padding: 20px;
     }
-}
     #nav-links.active {
         display: flex;
     }
@@ -322,18 +322,13 @@ color: white;
         margin-right: 0;
         margin-bottom: 20px;
     }
-    #nav-links a {
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    li a {
+    #nav {
         padding-left: 0;
         padding-right: 0;
     }
-}
     .hero-text {
         font-size: 1.2em;
-        padding-top: 4em;
+        padding-top: 8em;
     }
     #features {
         flex-direction: column;
@@ -385,6 +380,7 @@ color: white;
 }
 
    
+
 
 
 
