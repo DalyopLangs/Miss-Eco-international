@@ -127,21 +127,25 @@ button {
 #risk {
     background-color: orange;
     color-scheme: blue;
+text-decoration: none;
 }
 
 #performance {
     background-color: orange;
     color: blue;
+text-decoration: none;
 }
 
 #project {
     background-color: lightblue;
     color: blue;
+text-decoration: none;
 }
 
 #budget {
     background-color: lightblue;
     color: blue;
+text-decoration: none;
 }
 
 .fa-solid {
@@ -397,6 +401,7 @@ button {
 }
 
    
+
 
 
 
