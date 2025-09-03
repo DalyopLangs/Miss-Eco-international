@@ -289,27 +289,32 @@ color: white;
 }
 
 @media (max-width: 900px) {
-    .hamburger-menu {
-        display: block;
+    .navbar {
         position: fixed;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         z-index: 1000;
-        background-color: rgb(2, 44, 2);
-        padding: 10px;
+    }
+    .hamburger-menu {
+        display: block;
         color: white;
     }
     #nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* adjust this value to match the height of your .navbar */
-        height: 100vh;
+        top: 80px;
+        left: 0;
         width: 100%;
         background-color: rgb(2, 44, 2);
         padding: 20px;
     }
+}
     #nav-links.active {
         display: flex;
     }
@@ -380,6 +385,7 @@ color: white;
 }
 
    
+
 
 
 
