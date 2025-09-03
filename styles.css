@@ -288,10 +288,19 @@ color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .hamburger-menu {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background-color: rgb(2, 44, 2); /* Add background color to match navbar */
+        padding: 10px; /* Add some padding for better visibility */
+        color: white;
     }
+}
     #nav-links {
         display: none;
         flex-direction: column;
@@ -371,5 +380,6 @@ color: white;
 }
 
    
+
 
 
