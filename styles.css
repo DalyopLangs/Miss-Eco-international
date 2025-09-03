@@ -311,7 +311,7 @@ button {
         position: absolute;
         top: 120px; /* adjust this value based on the height of your logo and toggle bar */
         left: 0;
-        width: 100%;
+        width: 20%;
         background-color: rgb(2, 44, 2);
         padding: 20px;
     }
@@ -390,6 +390,7 @@ max-width: 20%;
 }
 
    
+
 
 
 
