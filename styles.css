@@ -346,6 +346,17 @@ button {
     .navbar {
         padding: 10px;
     }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 1000;
+    }
     .hamburger-menu {
         font-size: 1.5em;
     }
@@ -377,6 +388,7 @@ button {
 }
 
    
+
 
 
 
