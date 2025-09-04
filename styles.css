@@ -85,10 +85,11 @@ button {
 }
 
 .hero-text {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5 url("image/eco4.jpg"));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco4.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
+    
     text-align: center;
     color: greenyellow;
     font-size: 1.6em;
@@ -96,18 +97,23 @@ button {
 }
 
 .intro {
-    background-color: url("image/ecogirl 2.webp");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco\ girl\ 1.jpg");
+background-repeat: no-repeat;
+background-size:cover;
     padding: 45px;
     text-align: center;
     margin: 30px;
-    color: rgb(2, 48, 2);
+    color: yellowgreen;
+    
 }
 .mission {
     background-color: yellowgreen;
     padding: 45px;
     text-align: center;
     margin: 30px;
-    color: rgb(2, 48, 2);}
+    color: rgb(2, 48, 2);
+}
+
 #features {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -132,25 +138,21 @@ button {
 #risk {
     background-color: orange;
     color-scheme: blue;
-text-decoration: none;
 }
 
 #performance {
     background-color: orange;
     color: blue;
-text-decoration: none;
 }
 
 #project {
     background-color: lightblue;
     color: blue;
-text-decoration: none;
 }
 
 #budget {
     background-color: lightblue;
     color: blue;
-text-decoration: none;
 }
 
 .fa-solid {
@@ -406,10 +408,6 @@ text-decoration: none;
 }
 
    
-
-
-
-
 
 
 
