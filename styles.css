@@ -95,14 +95,19 @@ button {
     padding-top: 7em;
 }
 
-.intro, .mission {
-    background-color: yellowgreen;
+.intro {
+    background-color: url("ecogirl 2.jpg");
     padding: 45px;
     text-align: center;
     margin: 30px;
     color: rgb(2, 48, 2);
 }
-
+.mission {
+    background-color: yellowgreen;
+    padding: 45px;
+    text-align: center;
+    margin: 30px;
+    color: rgb(2, 48, 2);}
 #features {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -401,6 +406,7 @@ text-decoration: none;
 }
 
    
+
 
 
 
