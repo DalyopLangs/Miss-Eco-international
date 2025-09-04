@@ -89,7 +89,7 @@ button {
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
     text-align: center;
     color: greenyellow;
     font-size: 1.6em;
@@ -97,14 +97,15 @@ button {
 }
 
 .intro {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco\ girl\ 1.jpg");
+    background-image:linear-gradient(rgba(9, 9, 9, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco\ girl\ 1.jpg");
 background-repeat: no-repeat;
 background-size:cover;
     padding: 45px;
     text-align: center;
     margin: 30px;
-    color: yellowgreen;
-    
+    color: greenyellow  ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    font-size: 1.4em;
 }
 .mission {
     background-color: yellowgreen;
