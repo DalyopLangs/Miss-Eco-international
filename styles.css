@@ -20,6 +20,10 @@ button {
     color: blue;
 }
 
+.theme {
+  background: skyblue;
+    }
+
 .logo img {
     max-width: 10%;
     max-height: 10%;
@@ -409,6 +413,7 @@ background-size:cover;
 }
 
    
+
 
 
 
