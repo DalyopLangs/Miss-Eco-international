@@ -31,6 +31,12 @@ button {
 }
 
 .logo {
+    
+  background: linear-gradient(to bottom, #ffd700, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+  font-weight: bold;
     text-align: center;
     color: gold;
     background-color: white;
@@ -414,6 +420,7 @@ background-size:cover;
 }
 
    
+
 
 
 
