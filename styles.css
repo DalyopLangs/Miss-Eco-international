@@ -25,13 +25,14 @@ button {
     }
 
 .logo img {
+     border-radius: 50%;
     max-width: 10%;
     max-height: 10%;
 }
 
 .logo {
     text-align: center;
-    color: green;
+    color: gold;
     background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -413,6 +414,7 @@ background-size:cover;
 }
 
    
+
 
 
 
