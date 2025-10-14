@@ -96,7 +96,7 @@ button {
     background-size: cover;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
     text-align: center;
-    color: greenyellow;
+    color: darkgreen;
     font-size: 1.6em;
     padding-top: 7em;
 }
@@ -108,7 +108,7 @@ background-size:cover;
     padding: 45px;
     text-align: center;
     margin: 30px;
-    color: greenyellow  ;
+    color: darkgreen;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
     font-size: 1.4em;
 }
@@ -414,6 +414,7 @@ background-size:cover;
 }
 
    
+
 
 
 
