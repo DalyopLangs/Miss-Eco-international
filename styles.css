@@ -316,110 +316,103 @@ background-size:cover;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 900px) {
-    .navbar {
-        position: fixed;
-        top: 150PX;
-        left: 0;
-        width: 20%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1000;
-    }
-    .logo {
-        margin-bottom: 10px;
-    }
-    .hamburger-menu {
-        display: block;
-        color: white;
-    }
-
-
-    .hero-text {
-        font-size: 1.2em;
-        padding-top: 8em;
-    }
-    #features {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .in, .st, .trans {
-        width: 90%;
-        margin: 10px auto;
-        font-size: 1.1em;
-        min-width: unset;
-        max-width: unset;
-        height: 220px;
-        padding-top: 30px;
-    }
-}
-@media (max-width: 600px) {
-    .navbar {
-        position: fixed;
-        top: 0PX;
-        left: 0;
-        width: 20%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        opacity: 0.7;
-    }
-
-
-        #nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 120px; /* adjust this value based on the height of your logo and toggle bar */
-        left: 0;
-        width: 100%;
-        background-color: rgb(2, 44, 2);
-        padding: 100px;
-        margin: 10px;
-    }
-    #nav-links.active {
-        display: flex;
-    }
-    #nav-links li {
-        margin: 10px;
-    }
-    
-    .hamburger-menu {
-        font-size: 1.5em;
-
-    }
-    .hero-text {
-        font-size: 1em;
-        padding-top: 6em;
-    }
-    .intro, .mission {
-        padding: 15px;
-        margin: 6px;
-        font-size: 1em;
-    }
-    #features {
-        flex-direction: column;
-        padding: 8px;
-    }
-    .in, .st, .trans {
-        width: 98vw;
-        margin: 8px auto;
-        font-size: 0.9em;
-        height: 140px;
-        padding-top: 10px;
-    }
- #contact {
-        margin-top: 30px;
-        padding: 10px;
-        font-size: 1em;
-    }
-}
-
-   
+‎
+‎/* ... existing code ... */
+‎
+‎@media (max-width: 900px) {
+‎  .navbar {
+‎    position: fixed;
+‎    top: 0;
+‎    left: 0;
+‎    width: 100%;
+‎    padding: 10px;
+‎    display: flex;
+‎    justify-content: space-between;
+‎    align-items: center;
+‎    z-index: 1000;
+‎  }
+‎
+‎  .logo {
+‎    margin-bottom: 0;
+‎  }
+‎
+‎  .hamburger-menu {
+‎    display: block;
+‎    color: white;
+‎    font-size: 1.5em;
+‎  }
+‎
+‎  #nav-links {
+‎    display: none;
+‎    flex-direction: column;
+‎    position: absolute;
+‎    top: 60px;
+‎    left: 0;
+‎    width: 100%;
+‎    background-color: rgb(2, 44, 2);
+‎    padding: 20px;
+‎  }
+‎
+‎  #nav-links.active {
+‎    display: flex;
+‎  }
+‎
+‎  #nav-links li {
+‎    margin: 10px;
+‎  }
+‎
+‎  .hero-text {
+‎    font-size: 1.2em;
+‎    padding-top: 8em;
+‎  }
+‎
+‎  #features {
+‎    flex-direction: column;
+‎    padding: 20px;
+‎  }
+‎
+‎  .in, .st, .trans {
+‎    width: 90%;
+‎    margin: 10px auto;
+‎    font-size: 1.1em;
+‎    min-width: unset;
+‎    max-width: unset;
+‎    height: 220px;
+‎    padding-top: 30px;
+‎  }
+‎}
+‎
+‎@media (max-width: 600px) {
+‎  .hero-text {
+‎    font-size: 1em;
+‎    padding-top: 6em;
+‎  }
+‎
+‎  .intro, .mission {
+‎    padding: 15px;
+‎    margin: 6px;
+‎    font-size: 1em;
+‎  }
+‎
+‎  #features {
+‎    flex-direction: column;
+‎    padding: 8px;
+‎  }
+‎
+‎  .in, .st, .trans {
+‎    width: 98vw;
+‎    margin: 8px auto;
+‎    font-size: 0.9em;
+‎    height: 140px;
+‎    padding-top: 10px;
+‎  }
+‎
+‎  #contact {
+‎    margin-top: 30px;
+‎    padding: 10px;
+‎    font-size: 1em;
+‎  }
+‎}
 
 
 
