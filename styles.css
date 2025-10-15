@@ -116,8 +116,15 @@ button {
     color: white;
     font-size: 1.6em;
     padding-top: 7em;
+      
 }
-
+.scroll-box {
+  max-height: 500px; /* or any height you want */
+  overflow: auto;
+  padding: 10px;
+  
+  
+}
 
 .hero-text {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco4.jpg");
@@ -446,6 +453,7 @@ background-size:cover;
         font-size: 1em;
     }
 }
+
 
 
 
