@@ -452,7 +452,15 @@ background-size:cover;
         padding: 10px;
         font-size: 1em;
     }
+       #nav-links a {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
+
 
 
 
