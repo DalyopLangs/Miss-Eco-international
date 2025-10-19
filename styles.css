@@ -5,6 +5,40 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+html {
+    font-size: 18px;
+}
+
+body {
+    font-size: 1.15rem;
+    color: #222;
+}
+
+/* prevent content from being hidden behind fixed/sticky navbar */
+body > header + section, body > header + div, body > header + main {
+    padding-top: 70px; /* adjust if navbar height changes */
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p, li, a, button {
+    font-size: 1.15rem;
+}
+
+
+
+
+
 body {
     background-color: darkgreen;
 }
@@ -20,83 +54,8 @@ button {
     color: blue;
 }
 
-.theme {
-  background: skyblue;
-    }
-
-.logo img {
-     border-radius: 50%;
-    max-width: 10%;
-    max-height: 10%;
-}
-
-.logo {
-  color: #a5932b;
-  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
-  font-weight: bold;
-  background-color: #ffffff; /* White background */
-  padding: 10px; /* Add some space around the text */
-
-    text-align: center;
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    left: 25%;
-    right: 25%;
-    background-color: rgb(2, 44, 2);
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hamburger-menu {
-    color: white;
-    display: none;
-    cursor: pointer;
-}
-
-#nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-      white-space: nowrap;
-}
-
-#nav-links li {
-    margin-right: 20px;
-}
-
-#nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.8s;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 1.5em;
-    align-self: center;
-}
-
-#nav-links a:hover {
-    color: white;
-    background: orange;
-    border-radius: 3px;
-    transition: 0.8s;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 .agenda {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agenda.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco4.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
@@ -106,18 +65,6 @@ button {
     font-size: 1.6em;
     padding-top: 7em;
 }
-.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
-    text-align: center;
-    color: white;
-    font-size: 1.6em;
-    padding-top: 7em;
-}
-
 .pageantry {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pageant.jpg");
     background-repeat: no-repeat;
@@ -136,6 +83,103 @@ button {
   padding: 10px;
   
   
+}
+p.theme {
+    background: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3399ff;
+    font-size: 1.3em;
+    color: #222;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo img {
+        max-width: 100px; /* slightly bigger */
+        height: auto;
+        display: block;
+}
+
+.logo{  
+    color: #a5932b;
+    text-shadow: 0 0 6px #ffd700;
+    font-weight: bold;
+    background-color: #022a02; /* match navbar */
+    padding: 6px 12px;
+    margin-right: auto; /* move logo to left */
+    margin-left: 6px; /* slight left inset so it's not flush to edge */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* show the write-up (site title) to the right of the image inside navbar */
+.logo h1 {
+    display: block;
+    font-size: 1.1rem;
+    color: #a5932b;
+    margin: 0;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+/* increase navbar height padding to fit larger logo */
+.navbar {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px; /* ensure logo sits nicely at left */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #022a02; /* very dark green */
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.hamburger-menu {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px; /* consistent spacing between items */
+    align-items: center;
+}
+
+#nav-links li {
+    margin: 0; /* remove uneven margins */
+}
+
+#nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 6px 10px; /* slightly tighter padding */
+    margin: 0;
+    font-size: 1.15rem; /* reduced size so items fit on one line */
+    align-self: center;
+    display: inline-block;
+    white-space: nowrap; /* prevent wrapping for two-word links */
+}
+
+#nav-links a:hover {
+    color: white;
+    background: orange;
+    border-radius: 4px;
+    transition: 0.2s;
 }
 
 .hero-text {
@@ -157,21 +201,22 @@ background-size:cover;
     padding: 45px;
     text-align: center;
     margin: 30px;
-    color: white;
+    color: darkgreen ;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 .mission {
+    
   background-image: linear-gradient(rgba(0, 50, 0, 0.5), rgba(0, 50, 0, 0.5)), url('image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-     padding: 45px;
+padding: 45px;
     text-align: center;
     margin: 30px;
     color: white;
+    font-size: 1.6em;
 }
-
 
 #features {
     display: inline-flex;
@@ -374,7 +419,6 @@ background-size:cover;
         flex-direction: column;
         align-items: center;
         z-index: 1000;
-          white-space: nowrap;
     }
     .logo {
         margin-bottom: 10px;
@@ -465,15 +509,39 @@ background-size:cover;
         padding: 10px;
         font-size: 1em;
     }
-       #nav-links a {
-        font-size: 1em;
+    #nav-links a {
+        font-size: 1rem;
         padding-left: 20px;
         padding-right: 20px;
         margin-left: 10px;
         margin-right: 10px;
-              white-space: nowrap;
+        white-space: nowrap;
+    }
+
+    /* mobile: scale down logo and title */
+    .logo img {
+        max-width: 60px;
+    }
+    .logo h1 {
+        font-size: 0.9rem;
+    }
+    /* show hamburger on mobile */
+    .hamburger-menu {
+        display: block;
+    }
+    /* keep nav-links hidden until toggled */
+    #nav-links {
+        display: none;
+    }
+    #nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
     }
 }
+
+   
 
 
 
