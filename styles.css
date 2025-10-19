@@ -12,11 +12,22 @@ html {
 body {
     font-size: 1.15rem;
     color: #222;
+    background-color: #022a02;
 }
 
-/* prevent content from being hidden behind fixed/sticky navbar */
+/* remove extra space between header and first section */
 body > header + section, body > header + div, body > header + main {
-    padding-top: 70px; /* adjust if navbar height changes */
+    padding-top: 0;
+}
+
+header, header * {
+    margin: 0;
+    padding: 0;
+}
+
+/* ensure navbar doesn't add extra space below */
+.navbar {
+    margin-bottom: 0;
 }
 
 h1 {
@@ -39,9 +50,7 @@ p, li, a, button {
 
 
 
-body {
-    background-color: darkgreen;
-}
+
 
 button {
     background: skyblue;
@@ -167,7 +176,7 @@ p.theme {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    padding: 6px 10px; /* slightly tighter padding */
+    padding: 8px 12px; /* slightly tighter padding */
     margin: 0;
     font-size: 1.15rem; /* reduced size so items fit on one line */
     align-self: center;
@@ -448,34 +457,44 @@ padding: 45px;
     }
 }
 @media (max-width: 600px) {
+    /* On small screens make navbar part of the page flow so expanded menu pushes content down */
     .navbar {
-        position: fixed;
-        top: 0PX;
-        left: 0;
-        width: 20%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        opacity: 0.7;
-    }
-
-
-        #nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 120px; /* adjust this value based on the height of your logo and toggle bar */
-        left: 0;
+        position: static;
         width: 100%;
-        background-color: rgb(2, 44, 2);
-        padding: 100px;
-        margin: 10px;
-    }
-    #nav-links.active {
+        padding: 8px 12px;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* logo left, toggle right */
+        align-items: center;
+        background-color: #022a02;
     }
+
+    /* remove the top padding that compensates for a fixed navbar on larger screens */
+    body > header + section, body > header + div, body > header + main {
+        padding-top: 0;
+    }
+
+
+        /* mobile: animated dropdown for nav links that stays in flow (pushes content) */
+        #nav-links {
+            display: flex;
+            flex-direction: column;
+            position: static;
+            width: 100%;
+            background-color: rgb(2, 44, 2);
+            padding: 0 12px;
+            margin: 0;
+            overflow: hidden;
+            max-height: 0; /* collapsed */
+            opacity: 0;
+            transition: max-height 360ms ease, opacity 220ms ease, padding 200ms ease;
+        }
+        /* expanded state */
+        #nav-links.active {
+            max-height: 420px; /* large enough to show items; adjust if you have many links */
+            opacity: 1;
+            padding: 12px;
+        }
     #nav-links li {
         margin: 10px;
     }
@@ -525,9 +544,16 @@ padding: 45px;
     .logo h1 {
         font-size: 0.9rem;
     }
-    /* show hamburger on mobile */
+    /* show hamburger on mobile and place it to the right */
     .hamburger-menu {
         display: block;
+        order: 2;
+        margin-left: 8px;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .logo {
+        order: 1;
     }
     /* keep nav-links hidden until toggled */
     #nav-links {
