@@ -67,6 +67,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+      white-space: nowrap;
 }
 
 #nav-links li {
@@ -373,6 +374,7 @@ background-size:cover;
         flex-direction: column;
         align-items: center;
         z-index: 1000;
+          white-space: nowrap;
     }
     .logo {
         margin-bottom: 10px;
@@ -472,6 +474,7 @@ background-size:cover;
               white-space: nowrap;
     }
 }
+
 
 
 
