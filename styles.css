@@ -114,7 +114,7 @@ p.theme {
     color: #a5932b;
     text-shadow: 0 0 6px #ffd700;
     font-weight: bold;
-    background-color: #022a02; /* match navbar */
+    background-color: rgb(94, 221, 56); /* match navbar */
     padding: 6px 12px;
     margin-right: auto; /* move logo to left */
     margin-left: 6px; /* slight left inset so it's not flush to edge */
@@ -633,6 +633,7 @@ background-size:cover;
 }
 
    
+
 
 
 
