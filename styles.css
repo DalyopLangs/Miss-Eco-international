@@ -207,7 +207,7 @@ p.theme {
     background-image:linear-gradient(rgba(9, 9, 9, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco\ girl\ 1.jpg");
 background-repeat: no-repeat;
 background-size:cover;
-    padding: 130px;
+    padding: 150px;
     text-align: center;
     margin: 30px;
     color: white;
@@ -215,16 +215,81 @@ background-size:cover;
     font-size: 1.6em;
 }
 .mission {
-    
-  background-image: linear-gradient(rgba(0, 50, 0, 0.5), rgba(0, 50, 0, 0.5)), url('image.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-padding: 45px;
+    background-image: linear-gradient(rgba(0, 50, 0, 0.5), rgba(0, 50, 0, 0.5)), url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px;
     text-align: center;
     margin: 30px;
     color: white;
     font-size: 1.6em;
+}
+.mission-text, .vision-text {
+    text-align: center;
+}
+
+.mission-row, .vision-row {
+    display: flex;
+    align-items: flex-start; /* align text to the top of the image */
+    gap: 24px;
+    justify-content: center;
+    margin: 20px 0;
+}
+.mission-row .mission-img, .vision-row .vision-img {
+    /* roughly 3x the previous size (220px -> ~660px) */
+    flex: 0 0 660px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.mission-row .mission-content, .vision-row .vision-content {
+    flex: 1 1 auto;
+    max-width: none;
+    text-align: center;
+}
+
+/* ensure headings and paragraphs inside these content blocks start at top */
+.mission-row .mission-content h2,
+.vision-row .vision-content h2,
+.mission-row .mission-content p,
+.vision-row .vision-content p {
+    margin-top: 0;
+}
+
+/* place H2 at the top center of the write-up while keeping paragraphs left-aligned */
+.mission-row .mission-content, .vision-row .vision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center the heading */
+}
+.mission-row .mission-content p, .vision-row .vision-content p {
+    text-align: center; /* keep paragraph text left aligned */
+    width: 100%;
+}
+.mission-row .mission-content h2, .vision-row .vision-content h2 {
+    text-align: center;
+    width: 100%;
+}
+.vision-row {
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .mission-row, .vision-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mission-row .mission-content, .vision-row .vision-content {
+        max-width: 100%;
+    }
+    .mission-row .mission-img, .vision-row .vision-img {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 #features {
@@ -568,10 +633,6 @@ padding: 45px;
 }
 
    
-
-
-
-
 
 
 
