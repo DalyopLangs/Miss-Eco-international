@@ -596,52 +596,90 @@ background-size:cover;
     }
 }
 @media (max-width: 600px) {
-    /* On small screens make navbar part of the page flow so expanded menu pushes content down */
+    /* Make navbar full width and box-sizing: border-box ensures padding doesn't break layout */
     .navbar {
         position: static;
-        width: 100%;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
         padding: 8px 12px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; /* logo left, toggle right */
+        justify-content: space-between;
         align-items: center;
-       background-color:rgb(1, 14, 1);
+        background-color: rgb(1, 14, 1);
+        z-index: 1000;
     }
 
-    /* remove the top padding that compensates for a fixed navbar on larger screens */
     body > header + section, body > header + div, body > header + main {
         padding-top: 0;
     }
 
-
-        /* mobile: animated dropdown for nav links that stays in flow (pushes content) */
-        #nav-links {
-            display: flex;
-            flex-direction: column;
-            position: static;
-            width: 100%;
-            background-color: rgb(2, 44, 2);
-            padding: 0 12px;
-            margin: 0;
-            overflow: hidden;
-            max-height: 0; /* collapsed */
-            opacity: 0;
-            transition: max-height 360ms ease, opacity 220ms ease, padding 200ms ease;
-        }
-        /* expanded state */
-        #nav-links.active {
-            max-height: 420px; /* large enough to show items; adjust if you have many links */
-            opacity: 1;
-            padding: 12px;
-        }
-    #nav-links li {
-        margin: 10px;
+    /* Navbar links dropdown: ensure it's visible and not hidden/cut off */
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100vw;
+        background-color: rgb(2, 44, 2);
+        padding: 0 8px;
+        margin: 0;
+        max-height: 0; /* collapsed by default */
+        opacity: 0;
+        box-sizing: border-box;
+        transition: max-height 360ms ease, opacity 220ms ease, padding 200ms ease;
+        overflow: visible; /* allow child content to be seen */
     }
-    
+    #nav-links.active {
+        max-height: 800px; /* large enough for all links */
+        opacity: 1;
+        padding: 12px 8px;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #nav-links a {
+        font-size: 1rem;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal; /* allow wrapping */
+        text-align: left;
+    }
+
     .hamburger-menu {
         font-size: 1.5em;
-
+        display: block;
+        color: white;
+        order: 2;
+        margin-left: 8px;
     }
+    .logo {
+        order: 1;
+    }
+    .logo img {
+        max-width: 60px;
+    }
+    .logo h1 {
+        font-size: 0.9rem;
+    }
+
+    /* show/hide nav-links with active class */
+    #nav-links {
+        display: none;
+    }
+    #nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
     .hero-text {
         font-size: 1em;
         padding-top: 6em;
@@ -662,51 +700,14 @@ background-size:cover;
         height: 140px;
         padding-top: 10px;
     }
- #contact {
+    #contact {
         margin-top: 30px;
         padding: 10px;
         font-size: 1em;
     }
-    #nav-links a {
-        font-size: 1rem;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        white-space: nowrap;
-    }
-
-    /* mobile: scale down logo and title */
-    .logo img {
-        max-width: 60px;
-    }
-    .logo h1 {
-        font-size: 0.9rem;
-    }
-    /* show hamburger on mobile and place it to the right */
-    .hamburger-menu {
-        display: block;
-        order: 2;
-        margin-left: 8px;
-        color: white;
-        font-size: 1.4rem;
-    }
-    .logo {
-        order: 1;
-    }
-    /* keep nav-links hidden until toggled */
-    #nav-links {
-        display: none;
-    }
-    #nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
 }
-
    
+
 
 
 
