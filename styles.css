@@ -48,7 +48,7 @@ p, li, a, button {
 
 
 
-hero-text-agenda{
+.hero-text-agenda{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agenda.jpeg");
     background-repeat: no-repeat;
     height: 100vh;
@@ -59,7 +59,7 @@ hero-text-agenda{
     font-size: 1.6em;
     padding-top: 7em;
 }
-hero-text-about{
+.hero-text-about{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about.jpg");
     background-repeat: no-repeat;
     height: 100vh;
@@ -71,7 +71,7 @@ hero-text-about{
     padding-top: 7em;
 }
 
-hero-text-pageant{
+.hero-text-pageant{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pageant.jpg");
     background-repeat: no-repeat;
     height: 100vh;
@@ -707,6 +707,7 @@ background-size:cover;
 }
 
    
+
 
 
 
