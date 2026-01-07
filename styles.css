@@ -1,23 +1,18 @@
-/* styles.css of my new page*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* unified, modern system font stack for consistent appearance across platforms */
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
-    /* base font-size (adjust if you prefer larger/smaller text) */
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #222;
     background-color: wheat;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 /* remove extra space between header and first section */
@@ -37,131 +32,702 @@ header, header * {
 
 h1 {
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 h3 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: bold;
+}
+p, li, a, button {
+    font-size: 1.15rem;
 }
 
-/* unify text element sizes */
-p, li, a, button, h4 {
-    font-size: 1rem;
-    line-height: 1.5;
-}
 
-/* hero / large banner sections (background images)
-   Keep the full-screen look but ensure long paragraphs inside them get a scroll if needed */
-.hero-text-agenda,
-.hero-text-about,
-.hero-text-pageant,
-.hero-text {
+
+.hero-text-agenda{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agenda.jpeg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
     text-align: center;
     color: white;
-    font-size: 1.1rem;
-    padding-top: 6.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 1.6em;
+    padding-top: 7em;
+}
+.hero-text-about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
 }
 
-.hero-text-agenda { background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("agenda.jpeg"); }
-.hero-text-about { background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("about.jpg"); }
-.hero-text-pageant { background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("pageant.jpg"); }
-.hero-text { background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("hero.jpg"); }
+.hero-text-pageant{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pageant.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
+}
 
-/* Buttons */
+
 button {
     background: skyblue;
     width: 180px;
     height: 50px;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     border: 2px skyblue solid;
     border-radius: 5px;
     color: blue;
-    cursor: pointer;
 }
 
-/* Agenda section specific styling preserved */
 .agenda {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agenda.jpeg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
+}
+.pageantry {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pageant.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
+      
+}
+.scroll-box {
+  max-height: 500px; /* or any height you want */
+  overflow: auto;
+  padding: 10px;
+  
+  
+}
+p.theme {
+    background: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3399ff;
+    font-size: 1.3em;
+    color: #222;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Scrollable containers for long text: apply to hero paragraphs, intro and mission text, and any element using .scrollable */
-.scrollable,
-.hero-text p,
-.hero-text-about p,
-.hero-text-agenda p,
-.hero-text-pageant p,
-.intro,
-.mission-text,
-.sponsors-text {
-    max-height: 40vh; /* allow room for headings/navigation */
-    overflow-y: auto;
-    padding-right: 0.5rem; /* space for the scrollbar */
+.logo img {
+        max-width: 100px; /* slightly bigger */
+        height: auto;
+        display: block;
 }
 
-/* nicer scrollbars for WebKit browsers */
-.scrollable::-webkit-scrollbar,
-.hero-text p::-webkit-scrollbar,
-.hero-text-about p::-webkit-scrollbar,
-.hero-text-agenda p::-webkit-scrollbar,
-.hero-text-pageant p::-webkit-scrollbar,
-.intro::-webkit-scrollbar,
-.mission-text::-webkit-scrollbar {
-    width: 10px;
+.logo{  
+    color: #a5932b;
+    text-shadow: 0 0 6px #ffd700;
+    font-weight: bold;
+    background-color: wheat; /* match navbar */
+    padding: 6px 12px;
+    margin-right: auto; /* move logo to left */
+    margin-left: 6px; /* slight left inset so it's not flush to edge */
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.scrollable::-webkit-scrollbar-track,
-.hero-text p::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.05);
+/* show the write-up (site title) to the right of the image inside navbar */
+.logo h1 {
+    display: block;
+    font-size: 1.1rem;
+    color: #a5932b;
+    margin: 0;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+/* increase navbar height padding to fit larger logo */
+.navbar {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px; /* ensure logo sits nicely at left */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 14, 1); /* very dark green */
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.hamburger-menu {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px; /* consistent spacing between items */
+    align-items: center;
+}
+
+#nav-links li {
+    margin: 0; /* remove uneven margins */
+}
+
+#nav-links a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 12px; /* slightly tighter padding */
+    margin: 0;
+    font-size: 1.15rem; /* reduced size so items fit on one line */
+    align-self: center;
+    display: inline-block;
+    white-space: nowrap; /* prevent wrapping for two-word links */
+}
+
+#nav-links a:hover {
+    color: white;
+    
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.hero-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco4.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 7em;
+}
+
+.intro {
+    background-image:linear-gradient(rgba(9, 9, 9, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco\ girl\ 1.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+    padding: 150px;
+    text-align: center;
+    margin: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
+    font-size: 1.6em;
+}
+.mission {
+    background-image: linear-gradient(rgba(0, 50, 0, 0.5), rgba(0, 50, 0, 0.5)), url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px;
+    text-align: center;
+    margin: 30px;
+    color: white;
+    font-size: 1.6em;
+}
+.mission-text, .vision-text {
+    text-align: center;
+}
+
+.mission-row, .vision-row {
+    display: flex;
+    align-items: flex-start; /* align text to the top of the image */
+    gap: 24px;
+    justify-content: center;
+    margin: 20px 0;
+}
+.mission-row .mission-img, .vision-row .vision-img {
+    /* roughly 3x the previous size (220px -> ~660px) */
+    flex: 0 0 660px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.mission-row .mission-content, .vision-row .vision-content {
+    flex: 1 1 auto;
+    max-width: none;
+    text-align: center;
+}
+
+/* ensure headings and paragraphs inside these content blocks start at top */
+.mission-row .mission-content h2,
+.vision-row .vision-content h2,
+.mission-row .mission-content p,
+.vision-row .vision-content p {
+    margin-top: 0;
+}
+
+/* place H2 at the top center of the write-up while keeping paragraphs left-aligned */
+.mission-row .mission-content, .vision-row .vision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center the heading */
+}
+.mission-row .mission-content p, .vision-row .vision-content p {
+    text-align: center; /* keep paragraph text left aligned */
+    width: 100%;
+}
+.mission-row .mission-content h2, .vision-row .vision-content h2 {
+    text-align: center;
+    width: 100%;
+}
+.vision-row {
+    flex-direction: row;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+    .mission-row, .vision-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mission-row .mission-content, .vision-row .vision-content {
+        max-width: 100%;
+    }
+    .mission-row .mission-img, .vision-row .vision-img {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+#features {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.feat {
+    padding: 20px;
+    text-align: center;
+    color: blue;
+}
+
+.goals {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#risk {
+    background-color: orange;
+    color-scheme: blue;
+}
+
+#performance {
+    background-color: orange;
+    color: blue;
+}
+
+#project {
+    background-color: lightblue;
+    color: blue;
+}
+
+#budget {
+    background-color: lightblue;
+    color: blue;
+}
+
+.fa-solid {
+    font-size: 1.8rem;
+}
+
+.in, .st, .trans {
+    width: 20%;
+    min-width: 220px;
+    max-width: 350px;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-top: 50px;
+    font-weight: bolder;
+    margin: 0;
+    border-radius: 10px;
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.in:hover, .st:hover, .trans:hover {
+    width: 25%;
+}
+
+.in {
+    background-image: url(inovation.png);
+    height: 320px;
+    background-repeat: no-repeat;
+    color: purple;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.st {
+    background-image: url(partnership.png);
+    height: 380px;
+    background-repeat: no-repeat;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.trans {
+    background-image: url(transparency.png);
+    height: 320px;
+    background-repeat: no-repeat;
+    color: purple;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contact {
+    background-color:rgb(1, 14, 1);
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+#testimonials {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.myp1, .myp2, .myp3 {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.myp3, .myp2 {
+    border-left: 4px solid darkblue;
+}
+
+.myp2, .myp3 {
+    padding-left: 20px;
+}
+
+.intr {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkgreen;
+    padding: 45px;
+    text-align: center;
+    margin: 30px;
+}
+
+#pics .person img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+#pics .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#pics .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pics {
+    background-color: skyblue;
+    color: darkgreen;
+    text-align: center;
+    background-image: url('image/team bacground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pics .person p {
+    margin: 24px 0 0 0;
+    padding: 10px 18px 0 10px;
+    font-size: 1.1em;
+    background: orange;
     border-radius: 10px;
 }
 
-.scrollable::-webkit-scrollbar-thumb,
-.hero-text p::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.2);
-    border-radius: 10px;
+#pics h1 {
+    color: orange;
+    font-size: 2.5em;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Firefox scrollbar size and colors */
-.scrollable {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.05);
-}
+@media (max-width: 900px) {
+    .navbar {
+        position: fixed;
+        top: 150PX;
+        left: 0;
+        width: 20%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .hamburger-menu {
+        display: block;
+        color: white;
+    }
 
-/* Small responsive tweaks */
-@media (max-width: 800px) {
-    h1 { font-size: 2rem; }
-    .hero-text, .hero-text-about, .hero-text-agenda, .hero-text-pageant { padding-top: 5.5em; }
-    .scrollable, .hero-text p { max-height: 35vh; }
-}
 
-/* Accessibility: focus outlines for keyboard users */
-a:focus, button:focus {
-    outline: 3px solid rgba(21,156,228,0.6);
-    outline-offset: 2px;
+    .hero-text {
+        font-size: 1.2em;
+        padding-top: 8em;
+    }
+    #features {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .in, .st, .trans {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.1em;
+        min-width: unset;
+        max-width: unset;
+        height: 220px;
+        padding-top: 30px;
+    }
 }
+@media (max-width: 600px) {
+    /* Make navbar full width and box-sizing: border-box ensures padding doesn't break layout */
+    .navbar {
+        position: static;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(1, 14, 1);
+        z-index: 1000;
+    }
 
-/* small utility classes */
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    body > header + section, body > header + div, body > header + main {
+        padding-top: 0;
+    }
+
+    /* Navbar links dropdown: ensure it's visible and not hidden/cut off */
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100vw;
+        background-color: rgb(2, 44, 2);
+        padding: 0 8px;
+        margin: 0;
+        max-height: 0; /* collapsed by default */
+        opacity: 0;
+        box-sizing: border-box;
+        transition: max-height 360ms ease, opacity 220ms ease, padding 200ms ease;
+        overflow: visible; /* allow child content to be seen */
+    }
+    #nav-links.active {
+        max-height: 800px; /* large enough for all links */
+        opacity: 1;
+        padding: 12px 8px;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #nav-links a {
+        font-size: 1rem;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal; /* allow wrapping */
+        text-align: left;
+    }
+
+    .hamburger-menu {
+        font-size: 1.5em;
+        display: block;
+        color: white;
+        order: 2;
+        margin-left: 8px;
+    }
+    .logo {
+        order: 1;
+    }
+    .logo img {
+        max-width: 60px;
+    }
+    .logo h1 {
+        font-size: 0.9rem;
+    }
+
+    /* show/hide nav-links with active class */
+    #nav-links {
+        display: none;
+    }
+    #nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .hero-text {
+        font-size: 1em;
+        padding-top: 6em;
+    }
+    .intro, .mission {
+        padding: 15px;
+        margin: 6px;
+        font-size: 1em;
+    }
+    #features {
+        flex-direction: column;
+        padding: 8px;
+    }
+    .in, .st, .trans {
+        width: 98vw;
+        margin: 8px auto;
+        font-size: 0.9em;
+        height: 140px;
+        padding-top: 10px;
+    }
+    #contact {
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 1em;
+    }
 }
+   
 
-/* keep logo image from overflowing */
-.logo img { max-width: 100%; height: auto; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
