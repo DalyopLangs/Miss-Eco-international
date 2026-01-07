@@ -432,18 +432,7 @@ background-size:cover;
     color: #00b300;
 }
 
-.member.leader {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
 
-.member.leader h2 {
-    font-weight: bold;
-}
-
-.member.leader img {
-    width: 100%;
-    height: auto;
-}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
