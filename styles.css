@@ -42,7 +42,7 @@ header, header * {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 h2 {
@@ -95,7 +95,7 @@ p, li, a, button {
     text-align: center;
     color: white;
     font-size: 1.6em;
-    padding-top: 7em;
+    padding-top: 4em;
 }
 
 
@@ -247,7 +247,7 @@ p.theme {
     text-align: center;
     color: white;
     font-size: 1.6em;
-    padding-top: 7em;
+    padding-top: 5em;
 }
 
 .intro {
