@@ -70,6 +70,10 @@ p, li, a, button {
     font-size: 1.6em;
     padding-top: 7em;
 }
+.hero-text-sponsor {
+  overflow-y: auto;
+  max-height: 80vh; /* adjust the height as needed */
+}
 
 .hero-text-pageant{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pageant.jpg");
