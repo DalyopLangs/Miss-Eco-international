@@ -294,6 +294,7 @@ background-size:cover;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
     font-size: 1.6em;
+    border-radius: 20px;
 }
 .mission {
     background-image: linear-gradient(rgba(0, 50, 0, 0.5), rgba(0, 50, 0, 0.5)), url('image.jpg');
