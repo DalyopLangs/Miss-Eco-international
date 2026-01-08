@@ -59,7 +59,7 @@ p, li, a, button {
     text-align: center;
     color: white;
     font-size: 1.6em;
-    padding-top: 7em;
+    padding-top: 4em;
     overflow-y: scroll;
 }
 .hero-text-about{
@@ -71,7 +71,7 @@ p, li, a, button {
     text-align: center;
     color: white;
     font-size: 1.6em;
-    padding-top: 7em;
+    padding-top: 4em;
      overflow-y: scroll;
 }
 .hero-text-sponsor {
@@ -136,7 +136,7 @@ button {
     text-align: center;
     color: white;
     font-size: 1.6em;
-    padding-top: 7em;
+    padding-top: 4em;
       
 }
 .scroll-box {
