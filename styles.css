@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: #222;
     background-color: wheat;
 }
@@ -37,12 +37,12 @@ h1 {
     font-weight: bold;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 h3 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: ;
 }
 p, li, a, button {
     font-size: 1.15rem;
@@ -60,6 +60,7 @@ p, li, a, button {
     color: white;
     font-size: 1.6em;
     padding-top: 7em;
+    overflow-y: scroll;
 }
 .hero-text-about{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about.jpg");
@@ -71,9 +72,10 @@ p, li, a, button {
     color: white;
     font-size: 1.6em;
     padding-top: 7em;
+     overflow-y: scroll;
 }
 .hero-text-sponsor {
-  overflow-y: auto;
+  overflow-y: scroll;
   max-height: 80vh; /* adjust the height as needed */
 }
 
@@ -87,6 +89,7 @@ p, li, a, button {
     color: white;
     font-size: 1.6em;
     padding-top: 4em;
+    
 }
 .hero-text-sponsor{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("love tree.jpg");
@@ -98,6 +101,7 @@ p, li, a, button {
     color: white;
     font-size: 1.6em;
     padding-top: 4em;
+     overflow-y: scroll;
 }
 
 
