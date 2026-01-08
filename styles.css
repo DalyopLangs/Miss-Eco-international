@@ -248,6 +248,30 @@ p.theme {
     border-radius: 4px;
     transition: 0.2s;
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px; /* adjust to your desired max width */
+  margin: 40px auto;
+}
+
+.image-box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px; /* adjust to your desired height */
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px auto; /* added margin around image */
+}
 
 .hero-text {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/eco4.jpg");
