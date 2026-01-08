@@ -305,6 +305,7 @@ background-size:cover;
     margin: 30px;
     color: white;
     font-size: 1.6em;
+    border-radius: 20px;
 }
 .mission-text, .vision-text {
     text-align: center;
@@ -909,7 +910,10 @@ background-size:cover;
 }
    
 
-
+.herop   {
+        
+        border-radius: 20px;
+    }
 
 
 
