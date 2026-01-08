@@ -794,7 +794,7 @@ background-size:cover;
 }
 
 .footer {
-  background-color: #013201; /* dark green */
+  background-color:rgb(1, 14, 1) ; /* dark green */
   color: #fff;
   padding: 40px 0;
 }
